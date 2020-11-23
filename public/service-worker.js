@@ -2,7 +2,9 @@ const FILES_TO_CACHE = [
     "/",
     "/index.html",
     "/styles.css",
-    "/dist/bundle.js",
+    "/dist/index.bundle.js",
+    "/dist/db.bundle.js",
+    "/dist/manifest.json",
     "/icons/icon-512x512.png",
     "/db.js"
 ];

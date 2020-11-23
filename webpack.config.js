@@ -2,14 +2,19 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
-  entry: "./public/index.js",
+  entry: {
+    index: "./public/index.js",
+    db: "./public/db.js"
+  },
   output: {
     path: __dirname + "/public/dist",
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   },
   mode: "development",
   plugins: [
     new WebpackPwaManifest({
+      filename: "manifest.json",
+      fingerprints: false,
       name: "Budget App",
       short_name: " Budget App",
       description: "Track your budget off/online",
