@@ -7,7 +7,8 @@ const FILES_TO_CACHE = [
     "/dist/manifest.json",
     "/icons/icon-512x512.png",
     "/icons/icon-192x192.png",
-    "/db.js"
+    "/db.js",
+    "/index.js"
 ];
 
 const CACHE_NAME = "static-cache-v2";
